@@ -1,6 +1,6 @@
 # Get-LargestFiles.ps1
 
-You can find the script on my github here:
+You can find my blog post here:
 
 This script will help locate the largest files on the specified drive, while also displaying
 the sizes of the folders in the root directory.

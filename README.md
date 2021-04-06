@@ -1,6 +1,7 @@
 # Get-LargestFiles.ps1
 
 You can find my blog post here:
+https://robwillis.info/2021/04/powershell-script-quickly-find-the-largest-files/
 
 This script will help locate the largest files on the specified drive, while also displaying
 the sizes of the folders in the root directory.

@@ -94,7 +94,7 @@ function Get-RootFolderSizes($path) {
     # Loop through the directories
     foreach ($directory in $subDirectories) {
         $targetDir = $path + "\" + $directory
-        $folderSize = (Get-ChildItem $targetDir -Recurse -Force -ErrorAction SilentlyContinue | Measure-Object -Property Length -Sum).Sum 2> $null
+        $folderSize = (Get-ChildItem $targetDir -Recurse -File -Force -ErrorAction SilentlyContinue | Measure-Object -Property Length -Sum).Sum 2> $null
         $folderSizeMB = "{0:N0}" -f ($folderSize / 1MB)
         $directoryTable.Add("$targetDir","$folderSizeMB")
     }
